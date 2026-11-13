@@ -1,25 +1,30 @@
 <style>
- 
+  /* إخفاء عناصر مدونة بلوجر المزعجة (القوائم، الهيدر، الفوتر) ليظهر الموقع وحده */
+  .sidebar-container, .main-title, .post-header, .post-footer, header, footer, #header, #footer, nav {
+    display: none !important;
+  }
+  
+  /* تصفير الهوامش لكي يملأ الموقع الشاشة بالكامل */
   html, body {
     margin: 0 !important;
     padding: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    overflow: hidden !important;
-  }
-  
-  
-  .full-screen-target, object, iframe {
     width: 100vw !important;
     height: 100vh !important;
+    overflow: hidden !important;
+    background: #000;
+  }
+
+  /* جعل إطار العرض يغطي الشاشة عرضاً وارتفاعاً غصب عن أي قالب */
+  .direct-embed {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
     border: none !important;
-    z-index: 999999 !important;
+    z-index: 99999999 !important;
   }
 </style>
 
-
-<object class="full-screen-target" data="https://sea-lion-nbksmg.my.canva.site/"></object>
-
+<!-- عرض الموقع مباشرة وبدون أي روابط أو أزرار -->
+<object class="direct-embed" data="https://sea-lion-nbksmg.my.canva.site/"></object>
